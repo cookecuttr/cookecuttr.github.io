@@ -4,6 +4,7 @@ import PropTypes from 'prop-types'
 import pic01 from '../images/pic01.jpg'
 import pic02 from '../images/pic02.jpg'
 import pic03 from '../images/pic03.jpg'
+import transparent from '../images/transparent.png'
 
 class Main extends React.Component {
   render() {
@@ -15,7 +16,7 @@ class Main extends React.Component {
 
         <article id="intro" className={`${this.props.article === 'intro' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>
           <h2 className="major">Intro</h2>
-          <span className="image main"><img src={pic01} alt="" /></span>
+          <span className="image main"><img src={transparent} alt="" /></span>
           <p>Together, we can use technology and humanity to leave the world a better place than we found it.</p>
           {close}
         </article>
